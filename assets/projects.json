@@ -1,0 +1,85 @@
+[{
+        "id": "proj1",
+        "title": "Data Cleaning Sample 1",
+        "slug": "project-1",
+        "summary": "Preview the workbook inline or download/open using Google Drive or Dropbox.",
+        "thumbnail": "assets/thumb_1.png",
+        "hosted_file": "files/Data Cleaning Sample 1.xlsx",
+        "google_drive": "https://docs.google.com/spreadsheets/d/1z90TrLTb2BTi_gjzYRvl9LV4ersjB-s1/edit?usp=drive_link&ouid=104859486208952274992&rtpof=true&sd=true",
+        "dropbox": "",
+        "techniques": [
+            "Trim",
+            "Deduplicate",
+            "Standardize"
+        ]
+    },
+    {
+        "id": "proj2",
+        "title": "Data Cleaning Sample 2",
+        "slug": "project-2",
+        "summary": "Preview the workbook inline or download/open using Google Drive or Dropbox.",
+        "thumbnail": "assets/thumb_2.png",
+        "hosted_file": "files/Data Cleaning Sample 2.xlsx",
+        "google_drive": "https://drive.google.com/drive/folders/16jriXCYgXkrZyhrC9QrQRrRCK2Z-wjEA?usp=drive_link",
+        "dropbox": "",
+        "techniques": [
+            "Trim",
+            "Deduplicate",
+            "Standardize"
+        ]
+    },
+    {
+        "id": "proj3",
+        "title": "Data Cleaning Sample 3",
+        "slug": "project-3",
+        "summary": "Preview the workbook inline or download/open using Google Drive or Dropbox.",
+        "thumbnail": "assets/thumb_3.png",
+        "hosted_file": "files/Data Cleaning Sample 3.xlsx",
+        "google_drive": "",
+        "dropbox": "",
+        "techniques": [
+            "Trim",
+            "Deduplicate",
+            "Standardize"
+        ]
+    },
+    {
+        "id": "proj4",
+        "title": "Pivot Table Sample 1",
+        "slug": "project-4",
+        "summary": "Preview the workbook inline or download/open using Google Drive or Dropbox.",
+        "thumbnail": "assets/thumb_4.png",
+        "hosted_file": "files/Pivot Table Sample 1.xlsx",
+        "google_drive": "",
+        "dropbox": "",
+        "techniques": [
+            "Pivot Tables"
+        ]
+    },
+    {
+        "id": "proj5",
+        "title": "Pivot Table Sample 2",
+        "slug": "project-5",
+        "summary": "Preview the workbook inline or download/open using Google Drive or Dropbox.",
+        "thumbnail": "assets/thumb_5.png",
+        "hosted_file": "files/Pivot Table Sample 2.xlsx",
+        "google_drive": "",
+        "dropbox": "",
+        "techniques": [
+            "Pivot Tables"
+        ]
+    },
+    {
+        "id": "proj6",
+        "title": "Power Query Automation",
+        "slug": "project-6",
+        "summary": "Preview the workbook inline or download/open using Google Drive or Dropbox.",
+        "thumbnail": "assets/thumb_6.png",
+        "hosted_file": "files/Data Cleaning Automation.xlsx",
+        "google_drive": "",
+        "dropbox": "",
+        "techniques": [
+            "Power Query"
+        ]
+    }
+]

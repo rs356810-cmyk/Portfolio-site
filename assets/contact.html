@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — Surya Pratap Yadav</title>
+    <meta name="description" content="Contact Surya for freelance data cleaning and Excel work." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="assets/avatar.png" alt="avatar" class="avatar" />
+                <div>
+                    <h1>Surya Pratap Yadav</h1>
+                    <p class="title">Freelance Data Cleaner & Organizer</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="../index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Contact</h2>
+        <p>Send me a message or connect on LinkedIn.</p>
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+            <label>Name<input type="text" name="name" required></label>
+            <label>Email<input type="email" name="email" required></label>
+            <label>Subject<input type="text" name="subject"></label>
+            <label>Message<textarea name="message" rows="6" required></textarea></label>
+            <input type="hidden" name="_subject" value="Portfolio contact from website">
+            <button type="submit" class="cta">Send Message</button>
+            <p id="contact-msg" class="hidden"></p>
+        </form>
+
+        <p>Or email directly: <a href="mailto:Suryapratapxyadav@gmail.com">Suryapratapxyadav@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/surya-pratap-yadav-1894a6390" target="_blank" rel="noopener">surya-pratap-yadav</a></p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 Surya Pratap Yadav</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

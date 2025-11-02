@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projects — Surya Pratap Yadav</title>
+    <meta name="description" content="Project gallery showcasing Excel cleaning, pivot tables and Power Query automation." />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+    <style>
+        /* Scrollable modal styles */
+        
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            transition: opacity 0.3s ease;
+        }
+        
+        .modal[aria-hidden="true"] {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .modal-content {
+            background: var(--card-bg, #fff);
+            color: var(--text-color, #111);
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .modal-content h3 {
+            margin-top: 0;
+        }
+        
+        .modal-header,
+        .modal-footer {
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+            background: var(--header-bg, #f5f5f5);
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        
+        .modal-footer {
+            border-top: 1px solid #ddd;
+            border-bottom: none;
+            background: var(--header-bg, #f5f5f5);
+            bottom: 0;
+            top: auto;
+        }
+        
+        .modal-body {
+            padding: 1rem;
+            overflow-y: auto;
+            flex: 1;
+            background: var(--body-bg, #fafafa);
+        }
+        
+        .modal-body::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        .modal-body::-webkit-scrollbar-thumb {
+            background: #1E8F3E;
+            border-radius: 8px;
+        }
+        
+        .modal-body::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.1);
+        }
+        
+        .modal-close {
+            border: none;
+            background: transparent;
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="assets/avatar.png" alt="avatar" class="avatar" />
+                <div>
+                    <h1>Surya Pratap Yadav</h1>
+                    <p class="title">Freelance Data Cleaner & Organizer</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="../index.html">Home</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Projects</h2>
+        <div id="project-grid" class="grid"></div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 Surya Pratap Yadav</p>
+        </div>
+    </footer>
+
+    <!-- Scrollable modal -->
+    <div id="project-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true">
+            <div class="modal-header">
+                <h3 id="modal-title">Project Title</h3>
+                <button class="modal-close" aria-label="Close">×</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Excel preview loads here -->
+            </div>
+            <div class="modal-footer" id="modal-footer">
+                <!-- Project links -->
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
